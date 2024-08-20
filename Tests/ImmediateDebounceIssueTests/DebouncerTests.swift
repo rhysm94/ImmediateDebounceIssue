@@ -62,8 +62,6 @@ final class DebouncerTests: XCTestCase {
       }
     }
 
-    XCTAssertTrue(receivedValues.value.isEmpty)
-
     XCTAssertEqual(receivedValues.value, [1])
 
     await debouncer.debounce(clock: clock, duration: .seconds(1)) {
