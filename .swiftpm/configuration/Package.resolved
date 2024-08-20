@@ -1,0 +1,33 @@
+{
+  "originHash" : "da1d8e595b1b9987dc79c311ec41ee1c6b74669f09b648ea0722120192bf5804",
+  "pins" : [
+    {
+      "identity" : "swift-clocks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-clocks",
+      "state" : {
+        "revision" : "3581e280bf0d90c3fb9236fb23e75a5d8c46b533",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "swift-concurrency-extras",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+      "state" : {
+        "revision" : "bb5059bde9022d69ac516803f4f227d8ac967f71",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "9829b6a67cc9fb08ccdb499eb92d2be5cc2f5d64",
+        "version" : "1.2.4"
+      }
+    }
+  ],
+  "version" : 3
+}
