@@ -6,7 +6,7 @@
 //
 
 actor Debouncer {
-  private var task: Task<Void, Never>?
+  private var task: Task<Void, any Error>?
 
   init() {}
 
@@ -17,13 +17,9 @@ actor Debouncer {
   ) {
     task?.cancel()
 
-    let task = Task {
-      try? await clock.sleep(for: duration)
-      if !Task.isCancelled {
-        await perform()
-      }
+    self.task = Task {
+      try await clock.sleep(for: duration)
+      await perform()
     }
-
-    self.task = task
   }
 }
